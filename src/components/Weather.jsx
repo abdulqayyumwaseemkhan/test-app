@@ -4,7 +4,7 @@ export default function Weather() {
   const [city, setCity] = useState("");
   const [error, setError] = useState("");
   const [weather, setWeather] = useState(null);
-  const apiKey = "88cdc6a733656ffedd08bb536cfac1fb";
+  const apiKey = import.meta.env.VITE_APP_APIKEY;
   const handleCityChange = (e) => {
     setCity(e.target.value);
   };
